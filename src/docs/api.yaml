@@ -1,0 +1,17 @@
+openapi: 3.0.0
+info:
+  title: Data Aggregation API
+  version: 1.0.0
+  description: >
+    API d’agrégation de données externes enrichies avec des dark data calculées.
+servers:
+  - url: http://localhost:5000/api
+paths:
+  /profile:
+    get:
+      summary: Récupère un profil agrégé et enrichi
+      responses:
+        '200':
+          description: Profil complet
+        '500':
+          description: Erreur serveur
